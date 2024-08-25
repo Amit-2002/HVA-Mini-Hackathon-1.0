@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #3c3030;
+  --light: #fdfdfa;
+  --Dark_red: #d02424;
+  --light_red: #e84848;
+}
+
+/* stylling of top heading */
+.heading {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5vw 0;
+  gap: 16px;
+}
+.heading h1 {
+  font-size: 6rem;
+  font-family: Iowan Old Style;
+  font-weight: 500;
+  line-height: 117.6px;
+  color: var(--dark);
+  word-wrap: break-word;
+  text-align: center;
+}
+.heading img {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* horizontal lines  */
+hr {
+  margin-bottom: 0.4vw;
+}
+
+/* Search field stylling */
+
+form {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3vw auto;
+  /* border: 1px solid black; */
+}
+input[name="search"] {
+  /* display: inline-block;
+    height: 100%; */
+  /* color: #3C3030; */
+  font-size: 26px;
+  font-family: Iowan Old Style;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+
+  background-color: var(--light);
+  background-image: url("Frame 15.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding: 18px 20px 18px 40px;
+  border: 2px solid #ccc;
+  border-right: none;
+}
+
+button {
+  font-size: 24px;
+  font-family: Iowan Old Style;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+
+  color: var(--light);
+  background-color: var(--light_red);
+  border: none;
+  padding: 20px 13px 20px 26px;
+}
+
+/* main stylling */
+.main-container {
+  width: 70vw;
+  margin: 8vw auto;
+}
+
+main .container-heading {
+  color: var(--Dark_red);
+  margin-bottom: 1.3vw;
+  font-size: 20px;
+  font-family: Inria Sans;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.grid-container {
+  width: 100%;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 8vw;
+  column-gap: 3vw;
+}
+
+main .item {
+  width: 300px;
+  /* border: 2px solid blue; */
+}
+
+.item img {
+  width: 100%;
+}
+.item h2 {
+  color: var(--dark);
+  font-size: 18px;
+  font-family: Inknut Antiqua;
+  font-weight: 600;
+  line-height: 21.6px;
+  word-wrap: break-word;
+}
+
+.item p {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.item span {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: Inria Sans;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.item img,
+h2,
+p {
+  margin-bottom: 12px;
+}
+
+.item i {
+  color: var(--Dark_red);
+  margin-left: 10px;
+  font-size: 16px;
+  /* font-family: Inter; */
+  font-weight: 700;
+  text-decoration: underline;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+/* footer stylling */
+.footer-cont {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark);
+  font-weight: 400;
+  font-family: Iowan Old Styles;
+  padding: 3.5vw 0;
+}
+
+.footer-cont img {
+  height: 0.8vw;
+}
+
+/* media query for mobile max-width 768px to 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* stylling of top headding */
+  .heading h1 {
+    font-size: 4vw;
+  }
+  .heading img {
+    height: 3vw;
+    /* margin-left: -8px;
+        margin-right: -8px;    */
+  }
+  .heading {
+    padding: 0;
+  }
+
+  /* stylling of search field */
+  input[name="search"] {
+    font-size: 2.5vw;
+    padding: 12px 16px 12px 38px;
+    /* border: 2px solid gold; */
+  }
+  button {
+    font-size: 3vw;
+    padding: 14px 12px 14px 22px;
+  }
+
+  /* stylling of main section */
+  .main-container {
+    /* border: 2px solid black; */
+    width: 45vw;
+    /* margin: 8vw auto; */
+  }
+
+  main .container-heading {
+    font-size: 2.5vw;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .item h2,
+  p {
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .item h2 {
+    font-size: 3vw;
+  }
+  .item p,
+  span,
+  i {
+    font-size: 2vw;
+  }
+
+  /* stylling of footer section */
+
+  .footer-cont {
+    /* border: 2px solid red; */
+    width: 45vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 5px;
+  }
+  .footer-content {
+    font-size: 2vw;
+    width: 43%;
+    text-align: center;
+    /* padding-top: 3px; */
+  }
+}
+
+
+
+
+
+                    /* media query for max-width 600px */
+
+@media (max-width: 767px) {
+            /* stylling of top headding */
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading h1 {
+        font-size: 35px;
+    }
+    .heading img {
+        height: 25px;
+    }
+    .heading {
+        margin: -24px 0;
+    }
+  
+            /* stylling of search field */
+    form{
+        margin: 6vw 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[name="search"] {
+        font-size: 3.5vw;
+        padding: 5px 15px 5px 36px;
+    }
+    button {
+        font-size: 3.5vw;
+        padding: 7px 9px 7px 18px;
+    }
+
+            /* stylling of main section */
+    .main-container {
+        width: 75vw;
+    }
+
+    main .container-heading {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+    }
+
+    .item img {
+        width: 80%;
+    }
+
+    .item h2, p {
+        width: 75%;
+        line-height: 1.2;
+    }
+    .item p{
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .item h2 {
+        font-size: 18px;
+    }
+
+
+                /* stylling of footer section */
+
+    .footer-cont {
+        padding: 35px 0;
+        width: 75vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 5px;
+    }
+    .footer-cont :nth-child(1){
+        font-size: 16px;
+    }
+    .footer-cont img{
+        height: 8px;
+    }
+    .footer-content {
+        font-size: 16px;
+        width: 65%;
+        text-align: center;
+    }
+}
